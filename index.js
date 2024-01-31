@@ -37,7 +37,9 @@ const signIn = () =>{
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then((result) => {
     // Signed in
-    document.write("Admin You are Sucessfully Loged In")
+    // document.write("Admin You are Sucessfully Loged In")
+    let output = "Admin You are Sucessfully Loged In";
+    document.getElementById("form").innerHTML = output;
     console.log(result)
     // ...
   })
