@@ -21,7 +21,6 @@ const signUp = () => {
       // Signed in 
       document.write("You Are Sucessfully Signed Up")
       console.log(result)
-      // ...
     })
     .catch((error) => {
       console.log(error.code);
@@ -35,13 +34,11 @@ const signIn = () =>{
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   firebase.auth().signInWithEmailAndPassword(email, password)
+
   .then((result) => {
-    // Signed in
-    // document.write("Admin You are Sucessfully Loged In")
     let output = "Admin You are Sucessfully Loged In";
     document.getElementById("form").innerHTML = output;
     console.log(result)
-    // ...
   })
   .catch((error) => {
     console.log(error.code);
