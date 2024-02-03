@@ -44,5 +44,7 @@ const signIn = () =>{
     console.log(error.code);
     console.log(error.message);
   });
-  
+
+  div = document.getElementById('cards');
+  div.style.display = "flex";
 }

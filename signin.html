@@ -16,24 +16,66 @@
 
 <body>
     <div class="container">
-    <center>
-    <div class="form" id="form">
-        <div class="email">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter email">
-        </div>
-        <div class="pass">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password">
-        </div>
-        <button type="submit" class="submit" onclick="signIn()">
-            Sign In
-        </button>
-    </div>
-    </center>
-    </div>
+        <center>
+            <div class="form" id="form">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="pass">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+                <button type="submit" class="submit" onclick="signIn()">
+                    Sign In
+                </button>
+            </div>
+        </center>
+        <div id="cards">
+            <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <img src="./img/slab.jpg" alt="">
+                </svg>
+                <div class="card__content">
+                    <p class="card__title">Manish Nagar
+                    </p>
+                    <p class="card__description">Workers arrived at the site and the construction is under process.
+                        <br> Verified by: Thekedar 1 <br>
 
-    <script src="index.js"></script>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <img src="./img/bulldozer-2195329_640.jpg" alt="">
+                </svg>
+                <div class="card__content">
+                    <p class="card__title">Narayan Nagar
+                    </p>
+                    <p class="card__description">Buldozers arrived at the site and the construction is under process.
+                        <br> Verified by: Thekedar 2 <br>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <img src="./img/construction-257317_640.jpg" alt="">
+                </svg>
+                <div class="card__content">
+                    <p class="card__title">Laxmi Nagar
+                    </p>
+                    <p class="card__description">All The Equipmets Arrived at destination.
+                        Site is still under construction.<br> Verified by: Thekedar 3 <br> Best Regards: Musale
+                        Developer
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <script src="index.js"></script>
 </body>
 
 </html>
